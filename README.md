@@ -1,58 +1,109 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Tugas Pertemuan 11 - Exploratory Data Analysis (EDA) Kelulusan Mahasiswa
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Identitas
 
-## About Laravel
+* Nama : Dafiq Bisma Al alawy
+*NIM : 411232060
+* Mata Kuliah: Grafik dan Virtualisasi Data
+* Pertemuan: 11
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Deskripsi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Project ini merupakan implementasi Exploratory Data Analysis (EDA) untuk menganalisis faktor-faktor yang mempengaruhi kelulusan mahasiswa tepat waktu menggunakan Laravel.
 
-## Learning Laravel
+Analisis yang dilakukan meliputi:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Pola titik (Scatter Plot)
+* Distribusi kelulusan
+* Analisis korelasi
+* Rata-rata IPK
+* Rata-rata kehadiran
+* Identifikasi anomali (outlier)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Teknologi yang Digunakan
 
-## Agentic Development
+* Laravel 13
+* PHP 8.3
+* MySQL
+* Chart.js
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+---
+
+## Struktur Data
+
+Dataset mahasiswa berisi informasi:
+
+* IPK
+* Kehadiran
+* SKS Lulus
+* Status Kerja
+* Kelulusan Tepat Waktu
+
+---
+
+## Cara Menjalankan Project
+
+1. Clone repository
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/dbismaa/tugas-pertemuan-11-eda.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+2. Masuk ke folder project
 
-## Contributing
+```bash
+cd tugas-pertemuan-11-eda
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Install dependency
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Copy file environment
 
-## Security Vulnerabilities
+```bash
+copy .env.example .env
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. Atur koneksi database pada file `.env`
 
-## License
+6. Import database SQL ke MySQL
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Jalankan aplikasi
+
+```bash
+php artisan serve
+```
+
+8. Buka browser
+
+```text
+http://127.0.0.1:8000/praktikum-eda
+```
+
+---
+
+## Fitur Dashboard
+
+* Dashboard Ringkasan Data
+* Scatter Plot Kelulusan Mahasiswa
+* Distribusi Kelulusan
+* Analisis Korelasi
+* Analisis Anomali
+* Tabel Data Mahasiswa
+
+---
+
+## Repository
+
+https://github.com/dbismaa/tugas-pertemuan-11-eda
+
+## Link Bukti Berhasil Running
+
+https://drive.google.com/file/d/1AEqcwqC1z5FtqEJGZxM9XS0Oi24wTSx-/view?usp=sharing
