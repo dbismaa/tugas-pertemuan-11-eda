@@ -3,7 +3,7 @@
 ## Identitas
 
 * Nama : Dafiq Bisma Al alawy
-*NIM : 411232060
+* NIM : 411232060
 * Mata Kuliah: Grafik dan Virtualisasi Data
 * Pertemuan: 11
 
